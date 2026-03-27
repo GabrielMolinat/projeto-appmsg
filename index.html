@@ -1,62 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Frases de Anime</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto VScode</title>
+    <link rel="stylesheet" hret="style.css"
 </head>
 <body>
-
-  <h1>Arise</h1>
-  <h4>Frases para te motivar no dia a dia!</h4>
-
-  <div id="caixa-frase">
-    <p  id="frase"></p>
-    <p  id="autor"></p>
-    <p  id="anime"></p>
-  </div>
-
-<button onclick="proximaFrase()">Próxima Frase</button>
-
-<script>
-    let frases = [
-      {
-        texto: "Não importa o quão devagar você vá, desde que não pare.",
-        autor: "Rock Lee",
-        anime: "Naruto"
-      },
-      {
-        texto: "Se você não lutar pelo que quer, para que você veio até aqui?",
-        autor: "Natsu Dragneel",
-        anime: "Fairy Tail"
-      },
-      {
-        texto: "As pessoas que continuam tentando são as que vencem no final.",
-        autor: "Izuku Midoriya",
-        anime: "My Hero Academia"
-      },
-      {
-        texto: "Não chore para desistir, chore para continuar.",
-        autor: "Monkey D. Luffy",
-        anime: "One Piece"
-      }
-    ];
-
-    let indice = 0;
-    function mostrarFrase() {
-      document.getElementById("frase").textContent = '"' + frases[indice].texto + '"';
-      document.getElementById("autor").textContent = "— " + frases[indice].autor;
-      document.getElementById("anime").textContent = frases[indice].anime;
-    }
-
-    function proximaFrase() {
-      indice = indice + 1;
-      if (indice >= frases.length) {
-        indice = 0;
-      }
-      mostrarFrase();
-    }
-
-    mostrarFrase();
-</script>
+    <h1>Arise: Frases Diárias</h1>
+    <p id="msg">Frase Inicial</p>
+    <button onclick = "geradorMensagem()">Próxima Frase</button>
+    
+    <script src="app.js"></script>
 </body>
 </html>
