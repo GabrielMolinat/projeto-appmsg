@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
-    <title>Projeto Vsc</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 id="h1">Projeto 1</h1>
-    <p id="p">Versão: 1.53</p>
-    <button onclick="clicar()" id="butao">Clique aqui</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto VScode</title>
+   <link rel="stylesheet" href="style.css">
 
-<script> src="app.js" </script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Arise: Frases Diárias</h1>
+        <p id="msg">Frase Inicial</p>
+        <button onclick="geradorMensagem()">Próxima Frase</button>
+        <nav>
+            <span>Compartilhar</span>Home<span></span>Lista<span>
+        </nav>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
