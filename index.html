@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto VScode</title>
    <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
     <div id="app">
         <h1>Arise: Frases Diárias</h1>
         <p id="msg">Frase Inicial</p>
-        <button onclick="geradorMensagem()">Próxima Frase</button>
+        <button onclick="geradorMensagem()" id="gerar">Próxima Frase</button>
         <nav>
-            <span>Compartilhar</span>Home<span></span>Lista<span>
+            <span><img src="img/share.svg"></span><img src="img/house.svg"><span></span><img src="img/list.svg"><span>
         </nav>
     </div>
     <script src="app.js"></script>
